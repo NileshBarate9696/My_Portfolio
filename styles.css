@@ -412,104 +412,6 @@ h1 span {
   margin-bottom: 0.55rem;
 }
 
-.demos .section-head p {
-  max-width: 60ch;
-}
-
-.demo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.95rem;
-}
-
-.demo-card {
-  display: grid;
-  gap: 0.8rem;
-}
-
-.demo-card p {
-  color: var(--muted);
-}
-
-.chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.chip {
-  border: 1px solid var(--line);
-  background: rgba(15, 26, 42, 0.86);
-  color: var(--ink);
-  border-radius: 999px;
-  padding: 0.45rem 0.85rem;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.chip:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent-2);
-  background: rgba(77, 217, 199, 0.14);
-}
-
-.chip.active {
-  border-color: var(--accent-3);
-  background: rgba(129, 161, 255, 0.2);
-}
-
-.demo-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-}
-
-.demo-controls select,
-.demo-card textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  background: rgba(9, 15, 26, 0.85);
-  color: var(--ink);
-  border-radius: 12px;
-  padding: 0.7rem;
-  font-family: "Sora", sans-serif;
-}
-
-.demo-card textarea {
-  resize: vertical;
-  min-height: 90px;
-}
-
-.demo-list {
-  margin: 0;
-  padding-left: 1.1rem;
-  color: #cdd8ef;
-  line-height: 1.5;
-}
-
-.demo-result,
-.story-text {
-  margin: 0;
-  color: #d7e0f4;
-  background: rgba(129, 161, 255, 0.12);
-  border: 1px solid rgba(129, 161, 255, 0.28);
-  border-radius: 12px;
-  padding: 0.65rem 0.75rem;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 .contact .contact-links {
   display: grid;
   gap: 0.6rem;
@@ -574,8 +476,7 @@ h1 span {
   .split,
   .skills-grid,
   .projects-grid,
-  .edu-wrap,
-  .demo-grid {
+  .edu-wrap {
     grid-template-columns: 1fr;
   }
 
