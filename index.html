@@ -30,6 +30,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#demos">Demos</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -201,6 +202,63 @@
               Created a branching storytelling platform with responsive design and
               interactive frontend behavior.
             </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="demos" class="section reveal demos">
+        <div class="section-head">
+          <h2>Project Demos</h2>
+          <p>Interactive mini previews inspired by my resume projects.</p>
+        </div>
+        <div class="demo-grid">
+          <article class="card demo-card">
+            <h3>MoodFlix Demo</h3>
+            <p>Pick a mood and get a quick recommendation.</p>
+            <div class="chip-row" id="moodButtons">
+              <button class="chip" type="button" data-mood="Happy">Happy</button>
+              <button class="chip" type="button" data-mood="Focused">Focused</button>
+              <button class="chip" type="button" data-mood="Relaxed">Relaxed</button>
+              <button class="chip" type="button" data-mood="Energetic">Energetic</button>
+            </div>
+            <p class="demo-result" id="moodResult">Select a mood to see recommendation.</p>
+          </article>
+
+          <article class="card demo-card">
+            <h3>NewsNest Demo</h3>
+            <p>Simulated live headline fetch by category.</p>
+            <div class="demo-controls">
+              <label class="sr-only" for="newsCategory">News Category</label>
+              <select id="newsCategory">
+                <option value="technology">Technology</option>
+                <option value="sports">Sports</option>
+                <option value="business">Business</option>
+              </select>
+              <button class="chip" type="button" id="newsFetchBtn">Fetch Headlines</button>
+            </div>
+            <ul class="demo-list" id="newsList">
+              <li>Click fetch to load sample headlines.</li>
+            </ul>
+          </article>
+
+          <article class="card demo-card">
+            <h3>NoteGPT Demo</h3>
+            <p>Type notes and save/load from local browser storage.</p>
+            <label class="sr-only" for="noteInput">Note input</label>
+            <textarea id="noteInput" rows="4" placeholder="Write your note..."></textarea>
+            <div class="demo-controls">
+              <button class="chip" type="button" id="saveNoteBtn">Save Note</button>
+              <button class="chip" type="button" id="loadNoteBtn">Load Note</button>
+              <button class="chip" type="button" id="clearNoteBtn">Clear</button>
+            </div>
+            <p class="demo-result" id="noteStatus">No note saved yet.</p>
+          </article>
+
+          <article class="card demo-card">
+            <h3>Storytelling Demo</h3>
+            <p>Mini branching story inspired by the interactive website project.</p>
+            <p class="story-text" id="storyText">You are at a crossroad in a neon city.</p>
+            <div class="demo-controls" id="storyChoices"></div>
           </article>
         </div>
       </section>
